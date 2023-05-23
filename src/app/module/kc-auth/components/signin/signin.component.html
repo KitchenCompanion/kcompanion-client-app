@@ -1,1 +1,11 @@
-<p>signin works!</p>
+<div class="container w-100 flex flex-column align-items-center justify-content-center login-container">
+    <h4 class="text-center mb-4 ">Kitchen<span style="color:#FF5F15;">Companion</span></h4>
+    <div class="form flex flex-column gap-3 ">
+        <input type="text" class="form-control" id="username" placeholder="Username">
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        <button class="btn-orange">Login</button>
+        <div class="w-full text-center ">Don't have an account? <a (click)="goToLogin()" class="text-orange text">
+            Signin</a>
+        </div>
+    </div>
+</div>

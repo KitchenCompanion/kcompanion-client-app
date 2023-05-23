@@ -1,0 +1,14 @@
+.size {
+    height: 100vh;
+    background: url(../../../assets/image/bg.png) no-repeat center center/cover;
+    
+}
+button{
+    opacity: .8;
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 1;
+    
+}

@@ -1,0 +1,16 @@
+.login-container{
+    height: 100vh;
+}
+
+a{
+    opacity: .67;
+    transition: all ease-in 0.2s;
+    color: #FF5F15;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+.text:hover {
+    opacity: 1;
+    font-weight: bold;
+}
