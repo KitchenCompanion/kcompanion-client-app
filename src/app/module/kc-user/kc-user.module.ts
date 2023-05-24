@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { KcUserRoutingModule } from './kc-user-routing.module';
 import { KcUserComponent } from './kc-user.component';
+import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
 
 
 @NgModule({
   declarations: [
-    KcUserComponent
+    KcUserComponent,
+    RecipeDetailsComponent
   ],
   imports: [
     CommonModule,
