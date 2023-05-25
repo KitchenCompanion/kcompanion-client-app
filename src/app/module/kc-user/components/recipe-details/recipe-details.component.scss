@@ -1,0 +1,23 @@
+.search{
+    width: 15rem;
+}
+
+.button{
+    border: 1px solid #ff5f15;
+    background-color: transparent;
+    color: #ff5f15;
+
+
+}
+.button:hover{
+    // font-weight: bold;
+    color: #ffffff;
+    background-color: #ff5f15;
+}
+.ingredients h5,.procedure h5{
+    color: #ff5f15;
+    margin-bottom: 20px;  
+}
+textarea{
+    resize: none;
+}
