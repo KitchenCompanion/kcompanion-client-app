@@ -8,14 +8,16 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class LandingPageComponent implements OnInit {
 
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
 
   }
 
+  
   goToLogin() {
     this.router.navigate(['auth/signin'])
-  }
+    }
 
 }
