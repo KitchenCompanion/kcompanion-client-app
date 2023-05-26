@@ -12,7 +12,7 @@ children:[
   {path: 'recipe', component: RecipeComponent},
   {path: 'categories', component: CategoriesComponent},
   {path: 'create-recipe', component: CreateRecipeComponent},
-  {path: 'recipe-details', component: RecipeDetailsComponent},
+  {path: 'recipe/:id', component: RecipeDetailsComponent},
 
 
 ] }];
