@@ -5,6 +5,7 @@ import { KcAuthRoutingModule } from './kc-auth-routing.module';
 import { KcAuthComponent } from './kc-auth.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,9 @@ import { SignupComponent } from './components/signup/signup.component';
   ],
   imports: [
     CommonModule,
-    KcAuthRoutingModule
+    KcAuthRoutingModule,
+    FormsModule,
+    ReactiveFormsModule 
   ]
 })
 export class KcAuthModule { }
