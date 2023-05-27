@@ -6,6 +6,7 @@ export interface UserLogin{ //export it so it can be used by all services
 
 export interface LoginResponse{
     token: string
+    user_id: number
 }
 
 export interface UserSignup{
@@ -19,3 +20,4 @@ export interface SignupResponse{
         email: string
         username: string
 }
+

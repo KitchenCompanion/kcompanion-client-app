@@ -1,4 +1,7 @@
 <div class="container flex flex-column align-items-center justify-content-center signup-container">
+    <div class="alert alert-danger text-center" role="alert" *ngIf="message">
+        Error: Invalid credentials 
+    </div>
     <h4 class="text-center mb-4 ">Kitchen<span style="color:#FF5F15;">Companion</span></h4>
 
     <form [formGroup] = "formGroup" (ngSubmit)="register()">

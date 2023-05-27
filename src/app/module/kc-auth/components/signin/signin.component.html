@@ -1,5 +1,14 @@
+<!-- Alert -->
+
+
 <div class="container w-100 flex flex-column align-items-center justify-content-center login-container">
-    <h4 class="text-center mb-4 ">Kitchen<span style="color:#FF5F15;">Companion</span></h4>
+    <div class="alert alert-danger text-center" role="alert" *ngIf="message">
+        Error: Invalid Credentials
+    </div>
+    <div class="alert alert-success" role="alert" *ngIf="success">
+        Login Success: Redirecting...
+      </div>
+      <h4 class="text-center mb-4 ">Kitchen<span style="color:#FF5F15;">Companion</span></h4>
     
     <form [formGroup] = "formGroup" (ngSubmit)="logIn()">
 
@@ -8,9 +17,11 @@
             <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password" >
             <button class="btn-orange">Login</button>
             <div class="w-full text-center ">Don't have an account? <a (click)="goToSignup()" class="text-orange text fw-semibold">
-                Signup</a>
+                SignUp</a>
             </div>
         </div>
 
     </form>
+
+
 </div>

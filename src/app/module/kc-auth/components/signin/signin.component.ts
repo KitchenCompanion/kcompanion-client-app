@@ -17,6 +17,8 @@ export class SigninComponent implements OnInit {
 
   // The FormBuilder module is used to build a form
   formGroup!: FormGroup //Normally the formGroup was supposed to be assigned a value. ! tells the fucntion tha tthe value will be passed afterwards. bypasses the error
+  message!: string
+  success!: string
 
 
   constructor(
@@ -45,10 +47,14 @@ export class SigninComponent implements OnInit {
       next: response => { //a positive promise is signified by next
         //Define what happens when the promise returns +ve
         localStorageUtils.writeToken(response.token)
-        alert("Success")
+        localStorageUtils.writeId(response.user_id)
+
+        console.log(response)
+        this.success = response.token
+        this.router.navigate(["/user/"])
       },
       error: err =>{
-        alert("Error: Couldn't login")
+        this.message = err
       }
     })
 

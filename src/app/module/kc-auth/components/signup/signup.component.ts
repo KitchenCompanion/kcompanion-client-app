@@ -19,6 +19,7 @@ export class SignupComponent implements OnInit {
   // }
 
   formGroup!: FormGroup
+  message!: string
 
   constructor(
     private router: Router,
@@ -51,7 +52,7 @@ export class SignupComponent implements OnInit {
         alert("Success")
       },
       error: err =>{
-        alert("Error: Couldn't register")
+        this.message = err.msg
       }
     })
 
